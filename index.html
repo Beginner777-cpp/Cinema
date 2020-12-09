@@ -23,7 +23,9 @@
 
         <nav class="header__nav">
             <div class="container header_nav_content">
-                <div class="header__logo"><img src="img/header_logo.png" alt="">CINEMAS</div>
+                <div class="header__logo"><img src="img/header_logo.png" alt="">
+                    <div class="header_logo-text">CINEMAS</div>
+                </div>
                 <ul class="header_nav_list">
                     <li><a class="header_nav_list-link" href="#">Films</a></li>
                     <li><a class="header_nav_list-link" href="#">Serials</a></li>
@@ -37,33 +39,90 @@
     </header>
 
     <main class="main">
-        <div class="main_top">
-            <div class="main_top_content container col-6">
-                <h1 class="main_top_title">Kong: Skull Island</h1>
-                <p class="main_top_text">The film takes the viewer to the 70s of the last century. The protagonist
-                    organizes an expedition to the Skull island, always covered in fog, on which King Kong was once
-                    caught to find the missing brother and some mysterious substance. During...</p>
-                <div class="main_top_btns">
-                    <a href="" class="watch_btn">Watch now</a>
-                    <a href="" class="download_btn">Download</a>
+        <section class="main_top d-flex flex-column">
+            <div class="container d-flex flex-column flex-grow-1">
+                <div class="main_top_content row flex-column flex-grow-1 col-6">
+                    <h1 class="main_top_title">Kong: Skull Island</h1>
+                    <p class="main_top_text">The film takes the viewer to the 70s of the last century. The protagonist
+                        organizes an expedition to the Skull island, always covered in fog, on which King Kong was once
+                        caught to find the missing brother and some mysterious substance. During...</p>
+                    <div class="main_top_btns d-flex">
+                        <a href="" class="watch_btn">Watch now</a>
+                        <a href="" class="download_btn">Download</a>
+                    </div>
+                </div>
+
+                <div class="main_top_bg"></div>
+            </div>
+        </section>
+
+        <section class="main__films container">
+            <h1 class="main_films-title">Films</h1>
+            <div class="main_films_cards">
+                <div class="main_films_item">
+                    <video src="video/Globe - 6269.mp4" poster="img/panther.jpg" class="main_films_video"></video>
+                </div>
+                <div class="main_films_item">
+                    <video src="video/Globe - 6269.mp4" poster="img/Knight.png" class="main_films_video"></video>
+                </div>
+                <div class="main_films_item">
+                    <video src="video/Globe - 6269.mp4" poster="img/gentlmen.png" class="main_films_video"></video>
+                </div>
+                <div class="main_films_item">
+                    <video src="video/Globe - 6269.mp4" poster="img/Lord.png" class="main_films_video"></video>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="black_widow">
+            <video src="" data="video/Globe - 6269.mp4" class="video_widow"></video>
+            <div class="black_widow_poster">
+                <img src="img/widow.png" class="widow_poster-img" alt="">
+                <div class="poster_layout">
+                    <div class="container h-100 d-flex flex-column">
+                        <div class="poster_layout_content d-flex flex-column flex-grow-1 justify-content-center col-6">
+                            <div class="blackWidow_logo">
+                                <img src="img/widow_title.png" class="widow_logo_img" alt="">
+                            </div>
+                            <p class="blackWidow_text">
+                                After the events at the Leipzig-Halle airport, Natasha was overtaken by the mistakes
+                                of
+                                the past. The Red Room again made itself felt - a program to create Widows -
+                                professional killers and spies - just like her. Natasha decides once and for all to
+                                deal
+                                with people whose efforts she herself became a Widow.
+                            </p>
+                            <a href="" class="watch_btn">Watch now</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="main_top_bg"></div>
-        </div>
+        <section class="collection container">
+            <h1 class="collection_title"></h1>
+            <div class="collection_cards">
+                <div class="collection_item">
+                    <video class="collection_video" src="video/Globe - 6269.mp4" poster="img/avengers.png"></video>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="footer">
 
     </footer>
 
-
+    <script src="script/jquery.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-    </script>
+        </script>
+
 
     <script src="script/script.js"></script>
 </body>
