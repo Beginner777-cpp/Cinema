@@ -5,6 +5,10 @@
     list-style: none;
 }
 
+video {
+    object-fit: inherit;
+}
+
 p {
     margin: 0;
 }
@@ -247,15 +251,19 @@ ul {
 .collection_cards {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 33.333%);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
 }
 
 .collection_item {
     position: relative;
     width: 100%;
+    overflow: hidden;
+    transition: 0.5s;
 }
 
 .collection_video_layout {
+    transition: 0.5s;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -264,21 +272,139 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(270deg, rgba(7, 15, 25, 0.56) 0%, rgba(49, 114, 9, 0.56) 100%);
+    border-radius: 6px;
 }
 
 .column_box {
     width: 20px;
     height: 25px;
     background: #040D1F;
+    margin: 8px 0;
 
+}
+
+.left_column {
+    margin-left: 11px;
+}
+
+.right_column {
+    margin-right: 11px;
+}
+
+.play_btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.play_icon:hover {
+    cursor: pointer;
+}
+
+.play_btn_text {
+    color: white;
+    font-family: 'Comfortaa-Regular';
+    font-size: 20px;
 }
 
 .collection_video {
     width: 100%;
 }
 
+.series {
+    margin-top: 60px;
+    padding-bottom: 60px;
+}
+
+.series_cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 450px 190px 190px;
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
+
+}
+
+.series_item {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.series_video {
+    width: 100%;
+    height: 100%;
+}
+
+.series_item_thrones {
+    grid-column: 1/4;
+    margin-bottom: 10px;
+}
+
+.series_item_wandaVision {
+    grid-row: 2/4;
+}
+
+.series_video_layout {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 0%, rgba(11, 11, 11, 0.6) 100%);
+    border-radius: 6px;
+
+}
+
+.series_throne_layout {
+    justify-content: flex-start;
+}
+
+.throne_layout {
+    margin-left: 98px;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: start;
+    color: white;
+}
+
+.series_play_btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.series_throne_title {
+    color: white;
+    font-family: 'Comfortaa-Bold';
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.series_throne_text {
+    color: white;
+    font-family: 'Comfortaa-Regular';
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
 /*======================================= /main =====================================*/
 
 /*======================================= footer =====================================*/
-
+.footer {
+    background: linear-gradient(90deg, #FF8C30 0%, #9F4700 100%);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+.footer_content{
+    padding: 27px 0;
+}
+.footer_left_item1{
+    margin-right: 50px;
+}
 /*======================================= /footer =====================================*/
