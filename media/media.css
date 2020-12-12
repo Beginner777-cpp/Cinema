@@ -172,9 +172,6 @@
 }
 
 @media(max-width:568px) {
-    .widow_logo_img {
-        width: 300px;
-    }
     .blackWidow_text{
         font-size: 13px;
         margin-bottom: 30px;
@@ -210,8 +207,29 @@
     .black_widow{
         height: 400px;
     }
+    .blackWidow_logo{
+        margin-bottom: 30px;
+    }
 }
 
+@media(max-width: 380px){
+    .column_box {
+        width: 20px;
+        height: 20px;
+        margin: 8px 0;
+    }
+    .play_icon {
+        width: 32px;
+        height: 38px;
+    }
+    .play_btn_text {
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    .series_play_btn{
+        margin-top: 10px;
+    }
+}
 @media(max-width: 365px){
     .main_top_title{
         font-size: 30px;
@@ -225,16 +243,15 @@
         padding: 6px 18px;
     }
 
-    .widow_logo_img {
-        width: 200px;
-        margin-bottom: 15px;
-    }
     .blackWidow_text{
         font-size: 13px;
         margin-bottom: 15px;
-        width: 80%;
+        width: 100%;
     }
     .black_widow{
         height: 300px;
+    }
+    .blackWidow_logo{
+        margin-bottom: 15px;
     }
 }
